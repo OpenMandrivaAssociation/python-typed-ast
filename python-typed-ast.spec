@@ -3,7 +3,7 @@
 Summary:	Modified fork of CPython's ast module that parses `#type:` comments
 Name:		python-typed-ast
 Version:	1.4.0
-Release:	1
+Release:	2
 Group:		Development/Python
 License:	Python
 Url:		https://github.com/python/typed_ast
