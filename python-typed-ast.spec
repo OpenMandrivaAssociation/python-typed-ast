@@ -1,9 +1,10 @@
 %define module	typed-ast
+%define debug_package %{nil}
   
 Summary:	Modified fork of CPython's ast module that parses `#type:` comments
 Name:		python-typed-ast
-Version:	1.4.0
-Release:	2
+Version:	1.4.1
+Release:	1
 Group:		Development/Python
 License:	Python
 Url:		https://github.com/python/typed_ast
