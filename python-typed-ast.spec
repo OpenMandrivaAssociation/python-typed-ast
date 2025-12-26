@@ -2,13 +2,13 @@
   
 Summary:	Modified fork of CPython's ast module that parses `#type:` comments
 Name:		python-typed-ast
-Version:	1.5.1
-Release:	2
+Version:	1.5.5
+Release:	1
 Group:		Development/Python
 License:	Python
 Url:		https://github.com/python/typed_ast
 Source0:	https://github.com/python/typed_ast/archive/%{module}-%{version}.tar.gz
-BuildRequires:	python-setuptools
+BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	pkgconfig(python3)
  
 %description 
@@ -18,10 +18,10 @@ Modified fork of CPython's ast module that parses `#type:` comments
 %autosetup -p1 -n %{module}-%{version}
   
 %build
-%__python setup.py build
+%py_build
 
 %install 
-%__python setup.py install --root=%{buildroot} --record=FILE_LIST
+%py_install
 
 %files
 %{py_platsitedir}/typed_ast
